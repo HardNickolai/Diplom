@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        Имя
+        {{ form.name }}
+        Фамилия
+        {{ form.surname }}
+        Почта
+        {{ form.email }}
+        Телефон
+        {{ form.phone }}
+        <button>Изменить</button>
+    </form>
+    <a href="{% url 'index' %}">Главная</a>
+</body>
+</html>
