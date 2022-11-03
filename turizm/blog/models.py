@@ -23,6 +23,7 @@ class City(models.Model):
 class Country(models.Model):
     name = models.CharField(max_length=100, db_index=True)
     slug = models.SlugField(max_length=100, unique=True, db_index=True)
+    photo = models.ImageField(upload_to='photos/%Y/%m/%d', blank=True)
 
     def __str__(self):
         return self.name

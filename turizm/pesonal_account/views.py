@@ -10,6 +10,7 @@ from crm.forms import OrderForm
 from telebot1.sendmessage import send_telegram
 import requests
 
+
 def lk(request):
     person = request.user.id
     ch = 0
@@ -44,14 +45,15 @@ def lk_edit(request):
         person.phone_user = request.POST.get('phone')
         person.user = request.user
         person.save()
-        return render(request, 'blog/edit.html', {'form': form})
+        return render(request, 'blog/ok.html', {'form': form})
     else:
         return render(request, 'blog/edit.html', {'form': form})
 
 
 def signupuser(request):
     if request.method == 'GET':
-        return render(request, 'blog/signupuser.html', {'form': UserCreationForm()})
+        return render(request, 'blog/signupuser.html', {'form': UserCreationForm(),
+                                                        'title': 'Регистрация аккаунта'})
     else:
         if request.POST['password1'] == request.POST['password2']:
             try:
@@ -61,15 +63,17 @@ def signupuser(request):
                 return redirect('index')
             except IntegrityError:
                 return render(request, 'first/signupuser.html', {'form': UserCreationForm(),
-                                                                 'error': 'Имя уже существует'})
+                                                                 'error': 'Имя уже существует',
+                                                                 'title': 'Регистрация аккаунта'})
         else:
             return render(request, 'first/signupuser.html', {'form': UserCreationForm(),
-                                                             'error': 'Пароли не совпадают'})
+                                                             'error': 'Пароли не совпадают',
+                                                             'title': 'Регистрация аккаунта'})
 
 
 def loginuser(request):
     if request.method == 'GET':
-        return render(request, 'blog/loginuser.html', {'form': AuthenticationForm()})
+        return render(request, 'blog/loginuser.html', {'form': AuthenticationForm(), 'title': 'Вход в аккаунт'})
     else:
         user = authenticate(request, username=request.POST['username'], password=request.POST['password'])
         if user is None:
@@ -106,7 +110,7 @@ def thanks_page(request):
 
 
 def weather(request):
-    app_id = 'c41091fb908d42b1944203931222808'
+    app_id = 'e3342b37e25f467896255822220311'
 
     if request.method == 'GET':
         return render(request, template_name='blog/weather.html')

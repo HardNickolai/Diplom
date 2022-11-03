@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: url('../image/waves-crashing-on-beach.jpg');
+    background-size: cover;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.block-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.block-list-register {
+    height: 35px;
+    width: 350px;
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    background-color: #fdfdfd91;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.block-list-menu {
+    box-shadow: 0px 0px 10px 0px black;
+    height: 35px;
+    width: 500px;
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    background-color: #fdfdfd91;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.list-user-is-not-authenticated-entry {
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+}
+
+.list-user-is-not-authenticated-register {
+    padding-right: 10px;
+}
+
+.block-list-menu-lk {
+    width: 350px;
+    display: flex;
+    padding-left: 10px;
+    justify-content: space-between;
+}
+
+.block-weather {
+    position: relative;
+    margin-top: 10px;
+    height: 35px;
+    width: 180px;
+    background-color: #fdfdfd91;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    transition: left .4s linear;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.block-weather:hover {
+    left: 0px;
+}
+
+.btn {
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.text-link {
+    text-decoration: none;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.text-link:hover {
+    color: white;
+}
+
+.text-link-sun {
+    text-decoration: none;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    padding-right: 10px;
+}
+
+.text-link-sun:hover {
+    color: white;
+}
+
+.logo-weather {
+    width: 25px;
+    padding-left: 10px;
+}
+
+.block-weather-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.block_categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: #fdfdfd91;
+}
+
+.block__in__categories {
+    border-radius: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    width: 149px;
+    height: 34px;
+    align-items: center;
+}
+
+.block__in__categories p {
+    padding-right: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100;
+}
+
+.block__in__categories:hover {
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.text__name__country {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.main-content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.container-in-content {
+    height: 150px;
+    width: 300px;
+}
+
+.container-in-content a {
+    color: #000;
+    text-decoration: none;
+}
+
+.container-in-content h2 {
+    padding-top: 10px;
+    padding-left: 5px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container-in-content img{
+    object-fit: cover;
+    width: 300px;
+    height: 100px;
+}
+
+.container-in-content:hover {
+    box-shadow: 0px 0px 10px 0px black;
+    cursor: pointer;
+}
+
+.container-in-content:hover h2{
+    color: white;
+}
+
+.content-of-post{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+}
+
+.content-header {
+    position: relative;
+}
+
+.content-header h1 {
+    position: absolute;
+    font-style: italic;
+    top: 10px;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.content-of-post img {
+    object-fit: cover;
+    width: 600px;
+    height: 300px;
+}
+
+.content-of-post p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.expectation {
+    height: 400px;
+    width: -webkit-fill-available;
+    background-color: #fccb4680;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.waiting-text {
+    width: 600px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.waiting-picture {
+    width: 200px;
+}
+
+.text-title-post {
+    text-align: center;
+}
