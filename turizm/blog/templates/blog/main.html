@@ -55,11 +55,6 @@
                         Регистрация
                     </a>
                 </li>
-<!--                <li class="list-user-is-not-authenticated-register">-->
-<!--                    <a href="{% url 'signupuser' %}" class="text-link">-->
-<!--                        Регистрация-->
-<!--                    </a>-->
-<!--                </li>-->
             </ul>
             <ul class="block-weather">
                 <li class="block-weather-list">
@@ -76,7 +71,10 @@
     </div>
     <div class="content">
         <div class="expectation">
-            <p class="waiting-text">Портал о туризме. Информация о странах, путешествиях, отелях.</p>
+            <div class="expectation-inner-block">
+                <h1 class="text-name-site">GrandLuggage</h1>
+                <p class="waiting-text">Портал о туризме. Информация о странах, путешествиях, отелях.</p>
+            </div>
             <img src="{% static 'image/BfB3.gif' %}" alt="Картинка не найдена" class="waiting-picture">
         </div>
         {% block content %}

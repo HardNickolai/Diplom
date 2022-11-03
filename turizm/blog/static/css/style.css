@@ -264,7 +264,7 @@ li {
 }
 
 .waiting-text {
-    width: 600px;
+    width: 900px;
     font-family: 'Kanit', sans-serif;
     font-size: 40px;
     font-weight: 100;
@@ -277,4 +277,31 @@ li {
 
 .text-title-post {
     text-align: center;
+}
+
+.text-name-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    height:100px;
+    width: 900px;
+    background: linear-gradient(-45deg, white, #23a6d5, #23d5ab);
+    color: white;
+    animation: gradient 30s ease infinite;
+    font-family: 'Kanit', sans-serif;
+    font-size: 70px;
+    font-weight: 800;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
